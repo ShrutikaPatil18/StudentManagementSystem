@@ -7,12 +7,20 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoFixture" Version="4.18.0" />
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+    <PackageReference Include="Bogus" Version="34.0.2" />
+    <PackageReference Include="FluentAssertions" Version="6.11.0" />
+    <PackageReference Include="FluentValidation" Version="11.7.1" />
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.2" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="7.0.0" />
+    <PackageReference Include="Moq" Version="4.20.69" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
+    <ProjectReference Include="..\StudentManagementSystem.Application\StudentManagementSystem.Application.csproj" />
+    <ProjectReference Include="..\StudentManagementSystem.Domain\StudentManagementSystem.Domain.csproj" />
   </ItemGroup>
 
 </Project>
